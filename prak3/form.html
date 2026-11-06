@@ -1,0 +1,66 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="Widht=device-widht, initial-scale=1">
+    <meta name="description" content="Form tambah buku Perpus Mini">
+    <title>Tambah Buku</title> 
+</head>
+<body>
+    <h1>Tambah Buku</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Data Buku</legend>
+            <p>
+                <label for="judul">judul1</label><br>
+                <input type="text" id="judul" name="judul"
+                placeholder="=Contoh: Clean Code" minlength="3" required>
+            </p>
+            <p>
+                <label for="penulis">Penulis</label><br>
+                <input type="text" id="penulis" name="penulis" required>
+            </p>
+            <p>
+                <label for="kategori">Kategori</label><br>
+                <select id="kategori" name="kategori">
+                    <option value="1">Pemrograman</option>
+                    <option value="2">Novel</option>
+                    <option value="3">Sejarah</option>
+                    <option value="4">Pengembangan Diri</option>
+                </select>
+            </p>
+            <p>
+                <label for="tahun">Tahun terbit</label><br>
+                <input type="number" id="tahun" name="tahun"
+                min="1900" max="2026" required>
+            </p>
+            <p>
+                <label for="stok">Stok</label><br>
+                <input type="number" id="stok" name="stok" min="0" required>
+            </p>
+            <p>
+                <label for="isbn">ISBN</label><br>
+                <input type="text" id="isbn" name="isbn" maxlength="13"
+                pattern="[0-9]{13}" title="13 angka tanpa tanda hubung">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Bahasa Buku</legend>
+            <input type="radio" id="bahasa-id" name="bahasa" value="id">
+            <label for="bahasa-id">Indonesia</label>
+            <input type="radio" id="bahasa-en" name="bahasa" value="en">
+            <label for="bahasa-en">Inggris</label>
+        </fieldset>
+        <p>
+            <input type="checkbox" id="referensi" name="referensi">
+            <label for="referensi">Buku referensi (tidak dipinjamkan)</label>
+        </p>
+        <p>
+            <label for="sinopsis">Sinopsis</label><br>
+            <textarea id="sinopsis" name="sinopsis" rows="3" cols="40"></textarea>
+        </p>
+        <p>
+            <button type="submit">Simpan</button>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Pencarian buku Perpus Mini">
+        <title>Cari Buku</title>
+    </head>
+    <body>
+        <h1>Cari Buku</h1>
+        <form action="hasil.html" method="get">
+            <p>
+                <label for="kata">Kata kunci</label><br>
+                <input type="text" id="kata" name="kata" required>
+            </p>
+            <p>
+                <label for="kat">Kategori</label><br>
+                <select id="kat" name="kategori">
+                    <option value="">Semua</option>
+                    <option value="1">Pemrograman</option>
+                    <option value="2">Novel</option>
+                    <option value="3">Sejarah</option>
+                    <option value="4">Pengembangan Diri</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Cari</button>
+            </p>
+        </form>
+    </body>
+</html>
